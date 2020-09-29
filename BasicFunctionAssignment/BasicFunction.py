@@ -1,10 +1,14 @@
+def weekly_pay(hours_worked, hourly_pay_rate):
+    """ This function calculates and returns the product of
+    hours_worked & hourly_pay_rate"""
+    return hours_worked * hourly_pay_rate
+
 def hourly_employee_input():
     """ This function takes user input for their name, hours worked, &
     and hourly pay, and then prints the information to the screen
     """
     name = input("Please enter your name: ")
     right_input = True  # bool for the while loop
-
 
     while right_input == True:
         try:
@@ -20,9 +24,13 @@ def hourly_employee_input():
         except:
             print("Invalid input, please try again")
 
+    # Store the name and weekly pay in a string
+    name_and_weekly_pay = "Name: " + name + ", Weekly Revenue: $" \
+                          + str(weekly_pay(hours_worked, hourly_pay))
+
     print("=====================\n")  # spacing
-    print("Results:", "\nName: ", name, "\nHours Worked: ", hours_worked,
-          "\nHourly Pay: ", hourly_pay)
+
+    return name_and_weekly_pay
 
 if __name__ == '__main__':
-    hourly_employee_input()
+    print(hourly_employee_input())
