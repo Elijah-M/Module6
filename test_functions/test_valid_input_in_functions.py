@@ -14,13 +14,12 @@ class ValidateTest(unittest.TestCase):
 
     def test_score_input_test_score_above_range(self):
         self.assertEqual(score_input(test_name="Elijah", test_score=333), 333)
-    """
+
     def test_test_score_non_numeric(self):
         self.assertEqual(score_input(test_name="Elijah", test_score='E'), 'E')
     """
     def test_score_input_invalid_message(self):
-        self.assertEqual()
-    """
+        self.assertEqual(score_input(test_name="Elijah", test_score='E', invalid_message="nope"), 'nope')
 
 if __name__ == '__main__':
     unittest.main()

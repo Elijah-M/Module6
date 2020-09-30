@@ -32,7 +32,7 @@ def score_input(test_name, test_score=0, invalid_message='Invalid test score, tr
 
     print("======================\n", "Results:\n", "Test Name: ", test_name, "\n Test Score: ", test_score, "/ 100")
     # return { test_name: test_score}
-    return test_score  #Added to test the test_score variable
+    return invalid_message  #Added to test the invalid_message variable
 
 if __name__ == '__main__':
 
