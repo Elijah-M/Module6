@@ -41,4 +41,4 @@ def measurements(length, width):
     return results
 
 if __name__ == '__main__':
-    print(measurements(3, 4))
+    print(measurements(4, 4))  # Now a square
