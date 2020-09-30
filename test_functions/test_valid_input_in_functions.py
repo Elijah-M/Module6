@@ -5,13 +5,13 @@ class ValidateTest(unittest.TestCase):
     """
     def test_score_input_test_name(self):
         self.assertEqual(score_input(test_name="Elijah"), "Elijah")
-    """
+
     def test_score_input_test_score_valid(self):
         self.assertEqual(score_input(test_name="Elijah", test_score=9), 9)
     """
     def test_score_input_test_score_below_range(self):
-        self.assertEqual()
-
+        self.assertEqual(score_input(="Elijah", test_score=-2), -2)
+    """
     def test_score_input_test_score_above_range(self):
         self.assertEqual()
 
